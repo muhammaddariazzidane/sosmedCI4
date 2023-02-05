@@ -4,7 +4,7 @@
   <div class="container">
     <div class="row  ">
       <div class="col-lg-4 mx-auto">
-        <div class="card rounded-4 shadow border-0 mb-3">
+        <div class="card rounded-4 shadow-sm border-0 mb-3">
           <div class="card-body d-flex">
             <img src="/img/pp.jpg" class="rounded-circle me-3 object-fit-cover" alt="..." width="50px" height="50px">
             <div>

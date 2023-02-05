@@ -14,9 +14,12 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ms-auto">
         <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link text-light" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Create Post <i class="bi bi-plus  fw-bold"></i></a>
-        <!-- <a class="nav-link" href="#">Pricing</a> -->
-        <button type="button" class="btn btn-dark fw-semibold"><i class=" bi bi-box-arrow-in-right me-2"></i>Login </button>
+        <?php if (session()->get('id')) : ?>
+          <a class="nav-link text-light" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Create Post <i class="bi bi-plus  fw-bold"></i></a>
+          <a href="/logout" class="btn btn-dark fw-semibold"><i class=" bi bi-box-arrow-right me-2"></i>Logout </a>
+        <?php else : ?>
+          <a href="/login" class="btn btn-dark fw-semibold"><i class=" bi bi-box-arrow-in-right me-2"></i>Login </a>
+        <?php endif ?>
       </div>
     </div>
   </div>
